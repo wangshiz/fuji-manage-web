@@ -72,7 +72,7 @@
           this.$http({
             method: this.isEdit ? 'put' : 'post',
             url: '/item/brand',
-            data: this.$qs.stringfy(params)
+            data: this.$qs.stringify(params)
           }).then(() => {
             // 关闭窗口
             this.$emit("close");
